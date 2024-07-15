@@ -1,0 +1,49 @@
+/*============
+Page variables
+==============*/
+
+:root {
+    /*color scheme*/
+    --col-primary-bg: hsl(47, 88%, 63%);
+    --col-card-bg:  hsl(0, 0%, 100%);
+    --col-text: hsl(0, 0%, 50%);
+    --col-text-header: hsl(0, 0%, 7%);
+
+    /*fonts*/
+    --font: "Figtree", sans-serif;
+}
+
+/*======================================
+  Back to Basics (reset browser defaults)
+  =======================================*/
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  html {
+    background-color: var(--col-primary-bg);
+  }
+  
+  body * {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
