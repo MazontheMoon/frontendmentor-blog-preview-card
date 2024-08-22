@@ -3,47 +3,121 @@ Page variables
 ==============*/
 
 :root {
-    /*color scheme*/
-    --col-primary-bg: hsl(47, 88%, 63%);
-    --col-card-bg:  hsl(0, 0%, 100%);
-    --col-text: hsl(0, 0%, 50%);
-    --col-text-header: hsl(0, 0%, 7%);
+  /*color scheme*/
+  --col-primary-bg: hsl(47, 88%, 63%);
+  --col-card-bg: hsl(0, 0%, 100%);
+  --col-text: hsl(0, 0%, 50%);
+  --col-text-header: hsl(0, 0%, 7%);
 
-    /*fonts*/
-    --font: "Figtree", sans-serif;
+  /*fonts*/
+  --font: "Figtree", sans-serif;
 }
 
 /*======================================
   Back to Basics (reset browser defaults)
-  =======================================*/
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    font-size: 16px;
-    line-height: 1.5;
-  }
+=======================================*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  line-height: 1.5;
+}
 
-  html {
-    background-color: var(--col-primary-bg);
-  }
-  
-  body * {
-    margin: 0;
-    padding: 0;
-    position: relative;
-  }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-  }
+h1, p, a {
+  font-family: var(--font);
+}
 
+html {
+  background-color: var(--col-primary-bg);
+  height: 100%;
+}
 
+body * {
+  margin: 0;
+  padding: 0;
+}
 
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+body {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.card {
+  max-width: 327px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: var(--col-card-bg);
+  box-shadow: 10px 10px 1px black;
+}
+
+.hero-img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+p:has(span) {
+  margin: 10px 0;
+}
+
+.card .tag {
+  font-weight: 800;
+  background-color: var(--col-primary-bg);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  color: var(--col-text-header);
+}
+
+.card .publish-date {
+  font-weight: 500;
+  font-size: 0.7rem;
+  color: var(--col-text-header);
+}
+
+.card h1 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 10px 0;
+
+}
+
+.card p {
+  color: var(--col-text);
+}
+
+.author {
+  margin: 10px 0;
+  display: flex;
+}
+
+.author .avatar-pic {
+  margin: 10px;
+}
+
+.author .author-name {
+  font-weight: 700;
+  color: var(--col-text-header);
+  margin: auto 0;
+}
+.attribution {
+  position: fixed;
+  bottom: 5px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  padding-bottom: 0.5rem;
+}
