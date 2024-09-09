@@ -55,7 +55,7 @@ body {
 
 .card {
   max-width: 327px;
-  padding: 10px;
+  padding: 20px;
   border: 2px solid black;
   border-radius: 20px;
   background-color: var(--col-card-bg);
@@ -83,6 +83,7 @@ p:has(span) {
 .card .publish-date {
   font-weight: 500;
   font-size: 0.7rem;
+  font-weight: bold;
   color: var(--col-text-header);
 }
 
