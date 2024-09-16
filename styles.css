@@ -94,6 +94,10 @@ p:has(span) {
 
 }
 
+.card h1:hover {
+  color: var(--col-primary-bg);
+}
+
 .card p {
   color: var(--col-text);
 }
@@ -112,11 +116,20 @@ p:has(span) {
   color: var(--col-text-header);
   margin: auto 0;
 }
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
 .attribution {
   position: fixed;
   bottom: 5px;
+  width: 100%;
   font-size: 11px;
   text-align: center;
+
+
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
